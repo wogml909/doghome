@@ -18,21 +18,21 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         
     <insert id="insert">
        INSERT INTO reserve(order_no, user_id, date_no,reg_date)
-       VALUES (#{title}, #{writer}, #{content})
+       VALUES (#{order_no}, #{user_id}, #{date_no},#{reg_date})
     </insert>
 
     <update id="update">
-      UPDATE board
-      SET title = #{title}
-          ,writer = #{writer}
-          ,content = #{content}
+      UPDATE reserve
+      SET order_no = #{order_no}
+          ,user_id = #{user_id}
+          ,date_no = #{date_no}
           ,upd_date = now()
-    where no = #{no}   
+    where order_no = #{no}
     </update>
 
     <delete id="delete">
-     delete FROM board
-     WHERE  no = #{no}
+     delete FROM reserve
+     WHERE  order_no = #{no}
     </delete>
 
 </mapper>
