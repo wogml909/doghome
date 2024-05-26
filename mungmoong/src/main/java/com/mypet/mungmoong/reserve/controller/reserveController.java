@@ -13,7 +13,7 @@ import com.mypet.mungmoong.reserve.dto.Reserve;
 import com.mypet.mungmoong.reserve.service.ReserveService;
 
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.web.bind.annotation.RequestParam;
+
 
 
 @Slf4j

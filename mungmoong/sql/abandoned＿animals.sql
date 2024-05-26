@@ -1,3 +1,4 @@
+-- Active: 1713528331467@@127.0.0.1@3306@mungmoong
 CREATE TABLE `pet` (
 	`pet_no`	INT	NOT NULL,
 	`name`	VARCHAR(50)	NOT NULL,
@@ -176,4 +177,4 @@ ALTER TABLE `user_auth` ADD CONSTRAINT `PK_USER_AUTH` PRIMARY KEY (
 );
 
 SELECT *
-FROM abandoned＿animals;
+FROM abandoned_animals;

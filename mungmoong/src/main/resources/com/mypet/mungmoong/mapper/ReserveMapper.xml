@@ -5,19 +5,19 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 
 <mapper namespace="com.mypet.mungmoong.mapper.ReserveMapper">
 
-    <select id="list" resultType="Board">
+    <select id="list" resultType="Reserve">
         SELECT *
-        FROM board
+        FROM reserve
         ORDER BY reg_date DESC
     </select>
-    <select id="select" resultType="Board">
+    <select id="select" resultType="Reserve">
         select *
-        FROM board
-        where no = ${no}
+        FROM reserve
+        where order_no = ${order_no}
     </select>
         
     <insert id="insert">
-       INSERT INTO board(title, writer, content)
+       INSERT INTO reserve(order_no, user_id, date_no,reg_date)
        VALUES (#{title}, #{writer}, #{content})
     </insert>
 
